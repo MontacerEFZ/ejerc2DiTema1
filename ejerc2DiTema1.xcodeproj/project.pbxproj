@@ -16,6 +16,7 @@
 		1B3825E52AEA49A500EEC63A /* ejerc2DiTema1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3825E42AEA49A500EEC63A /* ejerc2DiTema1Tests.swift */; };
 		1B3825F02AEA49A500EEC63A /* ejerc2DiTema1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3825EF2AEA49A500EEC63A /* ejerc2DiTema1UITests.swift */; };
 		1B3826022AEA4A1800EEC63A /* Examen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3826012AEA4A1800EEC63A /* Examen.swift */; };
+		1B38260C2AEA5D9C00EEC63A /* VerExamenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B38260B2AEA5D9C00EEC63A /* VerExamenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1B3825EF2AEA49A500EEC63A /* ejerc2DiTema1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ejerc2DiTema1UITests.swift; sourceTree = "<group>"; };
 		1B3825F12AEA49A500EEC63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B3826012AEA4A1800EEC63A /* Examen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examen.swift; sourceTree = "<group>"; };
+		1B38260B2AEA5D9C00EEC63A /* VerExamenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerExamenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1B3825D62AEA49A500EEC63A /* Assets.xcassets */,
 				1B3825D82AEA49A500EEC63A /* LaunchScreen.storyboard */,
 				1B3825DB2AEA49A500EEC63A /* Info.plist */,
+				1B38260B2AEA5D9C00EEC63A /* VerExamenViewController.swift */,
 			);
 			path = ejerc2DiTema1;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				1B3825D22AEA49A300EEC63A /* ViewController.swift in Sources */,
 				1B3826022AEA4A1800EEC63A /* Examen.swift in Sources */,
 				1B3825CE2AEA49A300EEC63A /* AppDelegate.swift in Sources */,
+				1B38260C2AEA5D9C00EEC63A /* VerExamenViewController.swift in Sources */,
 				1B3825D02AEA49A300EEC63A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

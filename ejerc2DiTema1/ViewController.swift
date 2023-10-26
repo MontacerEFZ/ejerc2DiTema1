@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             //mensaje: no se puede:
             alertError(titulo: "error", mensaje: "faltan datos")
         }else{
-            //creamos el examen y lo meto en la lista en un paso:
+            //creamos el examen y lo meto en la lista en un pasoo:
             listaExamenes.append(Examen(nombre: nombre, totalPreguntas: Int(totalP)!, totalAcertadas: Int(totalA)!))
                 //! es para cuando convertimos por eso nomb no tiene
             
@@ -65,5 +65,49 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "ok", style: .destructive, handler: nil)) //nil es null
         self.present(alert, animated: true, completion: nil)
     }
+    
+    
+    /*
+    
+    @IBAction func btnVerVentanaNueva(_ sender: Any) {
+        let indice = txtPosicionLista.text!
+            
+            if indice.isEmpty {
+                alertError(titulo: "error", mensaje: "tienes que rellenar la posicion")
+            }else{
+                if Int(indice)! < 1 || Int(indice)! > listaExamenes.count {
+                    alertError(titulo: "error", mensaje: "posicion incorrecta")
+                }else{
+                    if segue.identifier == "VER" {
+                        let destino = segue.destination as!
+                        VerExamenViewController
+                        destino.examen = listaExamenes[Int(indice)!1]
+                    }
+                }
+            }
+    }*/
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let indice = txtPosicionLista.text!
+
+            if indice.isEmpty {
+                alertError(titulo: "error", mensaje: "tienes que rellenar la posicion")
+            }else{
+                if Int(indice)! < 1 || Int(indice)! > listaExamenes.count {
+                    alertError(titulo: "error", mensaje: "posicion incorrecta")
+                }else{
+                    if segue.identifier == "VER" {
+                        let destino = segue.destination as!
+                        VerExamenViewController
+                        destino.examen = listaExamenes[Int(indice)! - 1]
+                    }
+                }
+            }
+    }
+    
+    
+    
+    
 }
 
