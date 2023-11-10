@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     
-    /*
+    /*.
     
     @IBAction func btnVerVentanaNueva(_ sender: Any) {
         let indice = txtPosicionLista.text!
